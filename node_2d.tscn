@@ -1032,7 +1032,7 @@ y_sort_enabled = true
 zoom = Vector2(4, 4)
 
 [node name="Enemy" type="CharacterBody2D" parent="." unique_id=103120764 node_paths=PackedStringArray("tile_map_layer", "target")]
-position = Vector2(472, 752)
+position = Vector2(401, 752)
 script = ExtResource("15_ta5nu")
 tile_map_layer = NodePath("../TileMapLayer2")
 target = NodePath("../CharacterBody2D")
