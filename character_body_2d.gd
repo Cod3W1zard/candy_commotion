@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 225.0
 const FRICTION = 36000
 const ACCELERATION = 1200
 const ANIMATION_DICT = {
@@ -41,25 +41,6 @@ func _physics_process(delta):
 	if prev_x != direction.x or prev_y != direction.y:
 		if direction.x == 0 and direction.y == 0: 
 			state = "idle"
-			#if facing_x == 1:
-				#if facing_y == 1:
-					#sprite.play("idle_right_up")
-				#elif facing_y == 0:
-					#sprite.play("idle_right")
-				#elif facing_y == -1:
-					#sprite.play("idle_right_down")
-			#elif facing_x == 0:
-				#if facing_y == 1:
-					#sprite.play("idle_up")
-				#elif facing_y == -1:
-					#sprite.play("idle_down")
-			#elif facing_x == -1:
-				#if facing_y == 1:
-					#sprite.play("idle_left_up")
-				#elif facing_y == 0:
-					#sprite.play("idle_left")
-				#elif facing_y == -1:
-					#sprite.play("idle_left_down")
 		else:
 			facing_x = int(round(direction.x))
 			facing_y = int(round(direction.y))
